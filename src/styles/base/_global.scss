@@ -17,3 +17,7 @@ body {
 body, input, button {
   font-family: 'IBM Plex Sans', sans-serif;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
