@@ -25,13 +25,13 @@ function App() {
   }
 
   return (
-    <div id="app">
+    <>
       <HomeScreen />
       <section id="dev-radar-content" className="content">
         <Sidebar handleAddDev={handleAddDev} />
         <Main devs={devs} />
       </section>
-    </div>
+    </>
   );
 }
 
