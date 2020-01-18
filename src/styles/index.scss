@@ -2,10 +2,12 @@
 @import './base/reset';
 @import './base/font';
 @import './base/colors';
+@import './base/animations';
 @import './base/global';
 
 // Components styles
 @import '../components/App';
+@import '../components/HomeScreen/styles';
 @import '../components/Main/styles';
 @import '../components/Sidebar/styles';
 @import '../components/DevForm/styles';

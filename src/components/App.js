@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import api from '../services/api';
 
+import HomeScreen from './HomeScreen';
 import Main from './Main';
 import Sidebar from './Sidebar';
 
@@ -25,8 +26,11 @@ function App() {
 
   return (
     <div id="app">
-      <Sidebar handleAddDev={handleAddDev} />
-      <Main devs={devs} />
+      <HomeScreen />
+      <section id="dev-radar-content" className="content">
+        <Sidebar handleAddDev={handleAddDev} />
+        <Main devs={devs} />
+      </section>
     </div>
   );
 }
