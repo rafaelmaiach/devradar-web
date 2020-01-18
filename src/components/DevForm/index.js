@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import FormInput from './FormInput';
 
-const DevForm = ({ onSubmit }) => {
+const DevForm = ({ onSubmit, formError }) => {
 
   const [github_username, setGithubUsername] = useState('');
   const [techs, setTechs] = useState('');
@@ -52,6 +52,11 @@ const DevForm = ({ onSubmit }) => {
         value={github_username}
         onChange={setGithubUsername}
       />
+      {formError && (
+        <span className="invalid-user">
+          Usuário já cadastrado
+        </span>
+      )}
 
       <FormInput
         id="techs"

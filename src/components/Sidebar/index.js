@@ -1,10 +1,10 @@
 import React from 'react';
 import DevForm from '../DevForm';
 
-const Sidebar = ({ handleAddDev }) => (
+const Sidebar = ({ handleAddDev, formError }) => (
   <aside>
     <strong>Cadastrar</strong>
-    <DevForm onSubmit={handleAddDev} />
+    <DevForm onSubmit={handleAddDev} formError={formError} />
   </aside>
 );
 

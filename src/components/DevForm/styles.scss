@@ -1,6 +1,11 @@
 .dev-form {
   margin-top: 30px;
 
+  .invalid-user {
+    font-size: 12px;
+    color: $red;
+  }
+
   .input-group {
     margin-top: 20px;
     display: grid;
