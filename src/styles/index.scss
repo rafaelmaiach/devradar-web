@@ -1,0 +1,12 @@
+// Base styles
+@import './base/reset';
+@import './base/font';
+@import './base/colors';
+@import './base/global';
+
+// Components styles
+@import '../components/App';
+@import '../components/Main/styles';
+@import '../components/Sidebar/styles';
+@import '../components/DevForm/styles';
+@import '../components/DevItem/styles';

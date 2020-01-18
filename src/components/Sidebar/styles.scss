@@ -1,0 +1,20 @@
+aside {
+  width: 320px;
+  background: $white;
+  box-shadow: 0 0 14px 0 rgba($black, 0.02);
+  border-radius: 2px;
+  padding: 30px 20px;
+
+  strong {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: $black;
+  }
+}
+
+@media (max-width: 1000px) {
+  aside {
+    width: 100%;
+  }
+}

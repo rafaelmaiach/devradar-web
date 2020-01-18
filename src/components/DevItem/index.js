@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './styles.css';
-
 const DevItem = ({ dev }) => (
   <li className="dev-item">
     <header>

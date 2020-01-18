@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import './styles.css';
-
 const DevForm = ({ onSubmit }) => {
 
   const [github_username, setGithubUsername] = useState('');
@@ -43,7 +41,7 @@ const DevForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} class="dev-form">
       <div className="input-block">
         <label htmlFor="github_username">Usuário do Github</label>
         <input
