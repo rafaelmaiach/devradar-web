@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import FormInput from './FormInput';
+
 const DevForm = ({ onSubmit }) => {
 
   const [github_username, setGithubUsername] = useState('');
@@ -41,53 +43,45 @@ const DevForm = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} class="dev-form">
-      <div className="input-block">
-        <label htmlFor="github_username">Usuário do Github</label>
-        <input
-          id="github_username"
-          name="github_username"
-          required
-          value={github_username}
-          onChange={e => setGithubUsername(e.target.value)}
-        />
-      </div>
+    <form onSubmit={handleSubmit} className="dev-form">
+      <FormInput
+        id="github_username"
+        label="Usuário do GitHub"
+        name="github_username"
+        required
+        value={github_username}
+        onChange={setGithubUsername}
+      />
 
-      <div className="input-block">
-        <label htmlFor="techs">Tecnologias</label>
-        <input
-          id="techs"
-          name="techs"
-          required
-          value={techs}
-          onChange={e => setTechs(e.target.value)}
-        />
-      </div>
+      <FormInput
+        id="techs"
+        label="Tecnologias"
+        name="techs"
+        required
+        value={techs}
+        onChange={setTechs}
+      />
 
       <div className="input-group">
-        <div className="input-block">
-          <label htmlFor="latitude">Latitude</label>
-          <input
-            type="number"
-            id="latitude"
-            name="latitude"
-            required
-            value={latitude}
-            onChange={e => setLatitude(e.target.value)}
-          />
-        </div>
+        <FormInput
+          type="number"
+          id="latitude"
+          label="Latitude"
+          name="latitude"
+          required
+          value={latitude}
+          onChange={setLatitude}
+        />
 
-        <div className="input-block">
-          <label htmlFor="longitude">Longitude</label>
-          <input
-            type="number"
-            id="longitude"
-            name="longitude"
-            required
-            value={longitude}
-            onChange={e => setLongitude(e.target.value)}
-          />
-        </div>
+        <FormInput
+          type="number"
+          id="longitude"
+          label="Longitude"
+          name="longitude"
+          required
+          value={longitude}
+          onChange={setLongitude}
+        />
       </div>
 
       <button type="submit">Salvar</button>
