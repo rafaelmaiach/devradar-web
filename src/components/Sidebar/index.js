@@ -5,7 +5,7 @@ import { withTranslation } from 'react-i18next';
 const Sidebar = ({ handleAddDev, formError, t }) => (
   <aside>
     <strong>{t('form.title')}</strong>
-    <DevForm onSubmit={handleAddDev} formError={formError} />
+    <DevForm onSubmit={handleAddDev} />
   </aside>
 );
 

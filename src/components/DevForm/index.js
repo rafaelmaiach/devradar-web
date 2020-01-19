@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import FormInput from './FormInput';
 
-const DevForm = ({ onSubmit, formError }) => {
+const DevForm = ({ onSubmit }) => {
   const { t } = useTranslation();
 
   const [github_username, setGithubUsername] = useState('');
@@ -54,11 +54,6 @@ const DevForm = ({ onSubmit, formError }) => {
         value={github_username}
         onChange={setGithubUsername}
       />
-      {formError && (
-        <span className="invalid-user">
-          {t('form.usernameInvalid')}
-        </span>
-      )}
 
       <FormInput
         id="techs"
