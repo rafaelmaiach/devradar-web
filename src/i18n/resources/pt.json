@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "form": {
+      "title": "Cadastrar",
+      "username": "Usuário do GitHub",
+      "usernameInvalid": "Usuário já cadastrado",
+      "techs": "Tecnologias",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "submitButton": "Salvar"
+    }
+  }
+}

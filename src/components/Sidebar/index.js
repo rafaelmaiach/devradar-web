@@ -1,11 +1,12 @@
 import React from 'react';
 import DevForm from '../DevForm';
+import { withTranslation } from 'react-i18next';
 
-const Sidebar = ({ handleAddDev, formError }) => (
+const Sidebar = ({ handleAddDev, formError, t }) => (
   <aside>
-    <strong>Cadastrar</strong>
+    <strong>{t('form.title')}</strong>
     <DevForm onSubmit={handleAddDev} formError={formError} />
   </aside>
 );
 
-export default Sidebar;
+export default withTranslation()(Sidebar);

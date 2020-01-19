@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "form": {
+      "title": "Register",
+      "username": "GitHub username",
+      "usernameInvalid": "Username already registered",
+      "techs": "Technologies",
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "submitButton": "Save"
+    }
+  }
+}
