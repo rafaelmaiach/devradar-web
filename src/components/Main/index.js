@@ -1,12 +1,19 @@
 import React from 'react';
 
 import DevItem from '../DevItem';
+import Loading from '../Loading';
 
-const Main = ({ devs }) => (
+const Main = ({ devs, isLoading }) => (
   <main>
-    <ul>
-      {devs.map(dev => <DevItem key={dev._id} dev={dev} />)}
-    </ul>
+    {
+      isLoading ? (
+        <Loading width={150} height={150} />
+      ) : (
+        <ul>
+          {devs.map(dev => <DevItem key={dev._id} dev={dev} />)}
+        </ul>
+      )
+    }
   </main>
 );
 

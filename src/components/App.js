@@ -16,11 +16,14 @@ toast.configure({
 function App() {
   const { t } = useTranslation();
   const [devs, setDevs] = useState([]);
+  const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     async function loadDevs() {
+      setLoading(true);
       const response = await api.get('/devs');
       setDevs(response.data);
+      setLoading(false);
     };
 
     loadDevs();
@@ -44,7 +47,7 @@ function App() {
       <HomeScreen />
       <section id="dev-radar-content" className="content">
         <Sidebar handleAddDev={handleAddDev} />
-        <Main devs={devs} />
+        <Main devs={devs} isLoading={isLoading} />
       </section>
     </>
   );
