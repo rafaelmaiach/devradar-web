@@ -10,7 +10,12 @@ html, body {
 }
 
 body {
-  background: $grayish-purple;
+  background:
+    radial-gradient($black 15%, transparent 16%) 0 0,
+    radial-gradient($black 15%, transparent 16%) 8px 8px;
+  background-color: $black-2;
+
+  background-size: 16px 16px;
   -webkit-font-smoothing: antialiased;
 }
 
