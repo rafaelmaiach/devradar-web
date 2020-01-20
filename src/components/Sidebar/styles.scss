@@ -18,5 +18,7 @@ aside {
 @media (max-width: 1000px) {
   aside {
     width: 100%;
+    position: unset;
+    top: unset;
   }
 }

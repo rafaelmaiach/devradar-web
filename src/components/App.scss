@@ -18,5 +18,7 @@
 @media (max-width: 1000px) {
   #app .content {
     flex-direction: column;
+    padding: 20px 30px;
+    justify-content: flex-start;
   }
 }
