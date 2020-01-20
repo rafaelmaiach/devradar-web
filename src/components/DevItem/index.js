@@ -14,7 +14,7 @@ const DevItem = ({ dev }) => {
           <span>{technologies}</span>
         </div>
       </header>
-      <p>{bio}</p>
+      {bio && <p>{bio}</p>}
       <a href={`https://github.com/${githubUsername}`}>Acessar perfil no Github</a>
     </li>
   );
