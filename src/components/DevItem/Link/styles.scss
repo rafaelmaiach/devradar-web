@@ -1,0 +1,18 @@
+.link {
+  display: flex;
+  align-items: center;
+  color: $purple;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 15px;
+
+  &:hover {
+    color: $dark-purple;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 2px;
+  }
+}
