@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 
+import Tag from './Tag';
 import Link from './Link';
 
 import GitHubLogo from '../../assets/github.png';
@@ -17,8 +18,11 @@ const DevItem = ({ dev }) => {
 
   const [longitude, latitude] = coordinates;
 
+  const createTag = (tag) => <Tag key={tag} tag={tag} />;
+
+  const technologies = [...new Set(techs)].map(createTag);
+
   const githubUrl = `https://github.com/${githubUsername}`;
-  const technologies = techs.join(', ');
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
 
   return (
@@ -27,7 +31,7 @@ const DevItem = ({ dev }) => {
         <img src={avatarUrl} alt={name} />
         <div className="user-info">
           <strong>{name}</strong>
-          <span>{technologies}</span>
+          <div className="tags">{technologies}</div>
         </div>
       </header>
       {bio && <p>{bio}</p>}

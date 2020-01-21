@@ -1,0 +1,12 @@
+.tag {
+  font-size: 12px;
+  background-color: $purple;
+  color: $white;
+  padding: 2px 5px;
+  border-radius: 10px;
+  margin: 2px 0;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}

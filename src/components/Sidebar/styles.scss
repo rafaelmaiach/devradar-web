@@ -9,7 +9,8 @@ aside {
 
   .sidebar-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 
     .sidebar-title {
       font-size: 20px;

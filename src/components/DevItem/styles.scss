@@ -9,7 +9,7 @@
 
   header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     img {
       width: 54px;
@@ -26,10 +26,10 @@
         color: $black;
       }
 
-      span {
-        font-size: 13px;
-        color: $gray;
-        margin-top: 2px;
+      .tags {
+        display: flex;
+        margin: 2px 0;
+        flex-wrap: wrap;
       }
     }
   }
