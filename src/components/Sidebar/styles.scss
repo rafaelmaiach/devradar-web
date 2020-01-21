@@ -7,11 +7,47 @@ aside {
   border-radius: 2px;
   padding: 30px 20px;
 
-  strong {
-    font-size: 20px;
-    text-align: center;
-    display: block;
-    color: $black;
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+
+    .sidebar-title {
+      font-size: 20px;
+      text-align: center;
+      display: block;
+      color: $black;
+    }
+
+    .sidebar-language {
+      width: 50px;
+      justify-content: space-between;
+      align-items: center;
+
+      &.en-selected {
+        button:first-child {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+
+      &.pt-selected {
+        button:last-child {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 
