@@ -8,6 +8,7 @@
 
   .content {
     display: flex;
+    flex: 1;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
@@ -15,7 +16,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   #app .content {
     flex-direction: column;
     padding: 20px 30px;

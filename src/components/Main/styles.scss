@@ -9,7 +9,7 @@ main {
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    row-gap: 20px;
     list-style: none;
   }
 }
@@ -20,7 +20,7 @@ main {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   main {
     justify-content: center;
     align-items: flex-start;
