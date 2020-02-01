@@ -3,8 +3,8 @@ aside {
   top: 60px;
   width: 320px;
   background: $white;
-  box-shadow: 4px 4px 7.5px 0 rgba($green, 0.5);
-  border-radius: 2px;
+  box-shadow:  5px 5px 15px $grayish-blue, -5px -5px 15px $white;
+  border-radius: 25px;
   padding: 30px 20px;
 
   .sidebar-header {
