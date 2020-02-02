@@ -39,7 +39,8 @@ function App() {
       return;
     }
 
-    setDevs([...devs, response.data]);
+    toast.success(t('form.devSaved'));
+    setDevs([response.data, ...devs]);
   }
 
   return (

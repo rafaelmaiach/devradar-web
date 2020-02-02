@@ -7,7 +7,8 @@
       "techs": "Technologies",
       "latitude": "Latitude",
       "longitude": "Longitude",
-      "submitButton": "Save"
+      "submitButton": "Save",
+      "devSaved": "Developer added successfully"
     }
   }
 }
