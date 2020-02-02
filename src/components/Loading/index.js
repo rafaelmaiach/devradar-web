@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 
 const Loading = ({ width, height }) => (
-  <div style={{width, height}}>
+  <div style={{width, height}} className="loading__wrapper">
     <div className="razar">
       <div className="ringbase ring1"></div>
       <div className="ringbase ring2"></div>
